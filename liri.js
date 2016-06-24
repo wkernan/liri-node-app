@@ -114,5 +114,5 @@ switch(argOne) {
 		doIt()
 		break;
 	default:
-		console.log('Please enter one of the following commands after node liri.js\n 1. to search for a song input: spotify-this-song\n 2. to search for a movie input: movie-this\n 3. to run from random.txt input: do-what-it-says');
+		console.log('Please enter one of the following commands after node liri.js\n 1. to see my latest 20 tweets input: my-tweets\n 2. to search for a song input: spotify-this-song\n 3. to search for a movie input: movie-this\n 4. to run from random.txt input: do-what-it-says');
 }
