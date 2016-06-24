@@ -1,4 +1,5 @@
 var spotify = require('spotify');
+var request = require('request');
 var argOne = process.argv[2];
 var argTwo = process.argv[3];
 
@@ -35,7 +36,33 @@ function findTrack() {
 }
 
 function findMovie() {
-	
+	request('http://www.omdbapi.com/?t=' + argTwo + '&plot=short&r=json', function (error, response, body) {
+		var data = JSON.parse(body);
+	  if (data.Response == 'True') {
+	  	console.log('Movie Title: ' + data.Title);
+	  	console.log('Release Year: ' + data.Year);
+	  	console.log('IMDB Rating ' + data.imdbRating);
+	  	console.log('Country: ' + data.Country);
+	  	console.log('Language: ' + data.Language);
+	  	console.log('Plot: ' + data.Plot);
+	  	console.log('Actors: ' + data.Actors);
+	  	//console.log('Rotten Tomatoes Rating: ' + )
+	  } else {
+	  	request('http://www.omdbapi.com/?t=mr.nobody&plot=short&r=json', function (error, response, body) {
+	  		if (!error && response.statusCode == 200) {
+	  			var data = JSON.parse(body);
+	  			console.log("I couldn't find the movie you are looking for so here's the info for 'Mr. Nobody' \n");
+			  	console.log('Movie Title: ' + data.Title);
+			  	console.log('Release Year: ' + data.Year);
+			  	console.log('IMDB Rating ' + data.imdbRating);
+			  	console.log('Country: ' + data.Country);
+			  	console.log('Language: ' + data.Language);
+			  	console.log('Plot: ' + data.Plot);
+			  	console.log('Actors: ' + data.Actors);
+	  		}
+	  	})
+	  }
+	})
 }
 
 switch(argOne) {
