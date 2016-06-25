@@ -11,6 +11,7 @@ var client = new twitter({
 });
 var argOne = process.argv[2];
 var argTwo = process.argv[3];
+var argThree = process.argv[4];
 var count = 0;
 
 function findTweets() {
@@ -39,7 +40,7 @@ function findTrack() {
 	        return;
 	    } else {
 	    	if(data.tracks.items.length > 0) {
-	    		console.log('Searching Spotify for ' + argTwo + '\n')
+	    		console.log("Searching Spotify for '" + argTwo + "'\n");
 	    		console.log('Artist name: ' + data.tracks.items[0].artists[0].name);
 	    		console.log('Song: ' + data.tracks.items[0].name);
 	    		console.log('Link: ' + data.tracks.items[0].external_urls.spotify);
@@ -116,12 +117,32 @@ function doIt() {
 		argTwo = dataArr[1];
 		if(argOne == 'spotify-this-song') {
 			findTrack();
+			fs.appendFile("log.txt", "Ran do-what-it-says: " + argOne + " '" + argTwo + "' command.\n");
 		} else if(argOne == 'movie-this') {
 			findMovie();
+			fs.appendFile("log.txt", "Ran do-what-it-says: " + argOne + " '" + argTwo + "' command.\n");
 		} else if(argOne == 'my-tweets') {
-
+			findTweets();
+			fs.appendFile("log.txt", "Ran do-what-it-says: " + argOne + " command.\n");
 		}
+		
 	})
+}
+
+function newCmd() {
+	if(argTwo == 'my-tweets') {
+		fs.writeFile("random.txt", argTwo, function(err) {
+			if (err) throw err;
+			console.log("New command " + argTwo + " has been saved!");
+			fs.appendFile("log.txt", "Ran new-command and added " + argTwo + " to random.txt\n=========================================================================================================\n")
+		})
+	} else {
+		fs.writeFile("random.txt", argTwo + "," + argThree, function(err) {
+			if (err) throw err;
+			console.log("New Command " + argTwo + ", '" + argThree + "' has been saved!");
+			fs.appendFile("log.txt", "Ran new-command and added " + argTwo + ", '" + argThree + "' to random.txt\n=========================================================================================================\n")
+		})
+	}
 }
 
 switch(argOne) {
@@ -136,6 +157,9 @@ switch(argOne) {
 		break;
 	case 'do-what-it-says':
 		doIt()
+		break;
+	case 'new-command':
+		newCmd()
 		break;
 	default:
 		console.log('Please enter one of the following commands after node liri.js\n 1. to see my latest 20 tweets input: my-tweets\n 2. to search for a song input: spotify-this-song\n 3. to search for a movie input: movie-this\n 4. to run from random.txt input: do-what-it-says');
