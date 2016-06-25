@@ -14,9 +14,6 @@ var argTwo = process.argv[3];
 var count = 0;
 
 function findTweets() {
-	fs.writeFile("log.txt", "", function(err) {
-		if (err) throw err;
-	})
 	client.get('statuses/user_timeline', {count: 20}, function(error, tweets, response) {
 		if(error) throw error;
 		//console.log(tweets);
@@ -43,7 +40,7 @@ function findTrack() {
 	    		console.log('Song: ' + data.tracks.items[0].name);
 	    		console.log('Link: ' + data.tracks.items[0].external_urls.spotify);
 	    		console.log('Album: ' + data.tracks.items[0].album.name);
-	    		fs.writeFile("log.txt", 'Artist name: ' + data.tracks.items[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name, function (err) {
+	    		fs.appendFile("log.txt", 'Artist name: ' + data.tracks.items[0].artists[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name + '\n', function (err) {
 	    			if(err) throw err;
 	    			console.log('Saved to log.txt');
 	    		})
@@ -58,7 +55,7 @@ function findTrack() {
 			    		console.log('Song: ' + data.tracks.items[0].name);
 			    		console.log('Link: ' + data.tracks.items[0].external_urls.spotify);
 			    		console.log('Album: ' + data.tracks.items[0].album.name);
-			    		fs.writeFile("log.txt", 'Artist name: ' + data.tracks.items[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name, function (err) {
+			    		fs.appendFile("log.txt", 'Artist name: ' + data.tracks.items[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name + '\n', function (err) {
 	    					if(err) throw err;
 	    					console.log('Saved to log.txt');
 	    				})
@@ -82,7 +79,7 @@ function findMovie() {
 	  	console.log('Plot: ' + data.Plot);
 	  	console.log('Actors: ' + data.Actors);
 	  	//console.log('Rotten Tomatoes Rating: ' + )
-	  	fs.writeFile("log.txt", 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors, function (err) {
+	  	fs.appendFile("log.txt", 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n', function (err) {
 				if(err) throw err;
 				console.log('Saved to log.txt');
 			})
@@ -98,7 +95,7 @@ function findMovie() {
 			  	console.log('Language: ' + data.Language);
 			  	console.log('Plot: ' + data.Plot);
 			  	console.log('Actors: ' + data.Actors);
-			  	fs.writeFile("log.txt", 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors, function (err) {
+			  	fs.appendFile("log.txt", 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n', function (err) {
 						if(err) throw err;
 						console.log('Saved to log.txt');
 					})
