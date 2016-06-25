@@ -25,7 +25,7 @@ function findTweets() {
 				if (err) throw err;
 			})
 		})
-		fs.appendFile("log.txt", "========================================================================\n", function(err) {
+		fs.appendFile("log.txt", "=========================================================================================================\n", function(err) {
 			if (err) throw err;
 		})
 		console.log('Saved to log.txt');
@@ -44,7 +44,7 @@ function findTrack() {
 	    		console.log('Song: ' + data.tracks.items[0].name);
 	    		console.log('Link: ' + data.tracks.items[0].external_urls.spotify);
 	    		console.log('Album: ' + data.tracks.items[0].album.name);
-	    		fs.appendFile("log.txt", "Spotify Search for track: '" + argTwo + "'\n" + 'Artist name: ' + data.tracks.items[0].artists[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name + '\n========================================================================\n', function (err) {
+	    		fs.appendFile("log.txt", "Spotify Search for track: '" + argTwo + "'\n" + 'Artist name: ' + data.tracks.items[0].artists[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name + '\n=========================================================================================================\n', function (err) {
 	    			if(err) throw err;
 	    			console.log('Saved to log.txt');
 	    		})
@@ -59,7 +59,7 @@ function findTrack() {
 			    		console.log('Song: ' + data.tracks.items[0].name);
 			    		console.log('Link: ' + data.tracks.items[0].external_urls.spotify);
 			    		console.log('Album: ' + data.tracks.items[0].album.name);
-			    		fs.appendFile("log.txt", "Spotify search for track: '" + argTwo + "' was not available, so searched: 'What's My Age Again' instead\n" + 'Artist name: ' + data.tracks.items[0].artists[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name + '\n========================================================================\n', function (err) {
+			    		fs.appendFile("log.txt", "Spotify search for track: '" + argTwo + "' was not available, so searched: 'What's My Age Again' instead\n" + 'Artist name: ' + data.tracks.items[0].artists[0].name + '\n' + 'Song: ' + data.tracks.items[0].name + '\n' + 'Link: ' + data.tracks.items[0].external_urls.spotify + '\n' + 'Album: ' + data.tracks.items[0].album.name + '\n=========================================================================================================\n', function (err) {
 	    					if(err) throw err;
 	    					console.log('Saved to log.txt');
 	    				})
@@ -83,7 +83,7 @@ function findMovie() {
 	  	console.log('Plot: ' + data.Plot);
 	  	console.log('Actors: ' + data.Actors);
 	  	//console.log('Rotten Tomatoes Rating: ' + )
-	  	fs.appendFile("log.txt", "OMDB search for movie: '" + argTwo + "'\n" + 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n========================================================================\n', function (err) {
+	  	fs.appendFile("log.txt", "OMDB search for movie: '" + argTwo + "'\n" + 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n=========================================================================================================\n', function (err) {
 				if(err) throw err;
 				console.log('Saved to log.txt');
 			})
@@ -99,7 +99,7 @@ function findMovie() {
 			  	console.log('Language: ' + data.Language);
 			  	console.log('Plot: ' + data.Plot);
 			  	console.log('Actors: ' + data.Actors);
-			  	fs.appendFile("log.txt", "OMDB search for movie: '" + argTwo + "' was not available, so searched: 'Mr.Nobody' instead\n" + 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n========================================================================\n', function (err) {
+			  	fs.appendFile("log.txt", "OMDB search for movie: '" + argTwo + "' was not available, so searched: 'Mr.Nobody' instead\n" + 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n=========================================================================================================\n', function (err) {
 						if(err) throw err;
 						console.log('Saved to log.txt');
 					})
