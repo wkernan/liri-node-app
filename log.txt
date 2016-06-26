@@ -1,0 +1,57 @@
+My Last 20 Tweets
+2: Check out the project I just built with @FreeCodeCamp: https://t.co/Nx4lx4UV6m
+ #LearnToCode #JavaScript
+1: I just earned the First Component badge on level 1 of Powering Up With React! https://t.co/1U11bbs7IS
+3: I just made it to 6 Kyū on @codewars! Come join me #codewarriors! https://t.co/BTKKopoltv
+4: Check out the project I just built with @FreeCodeCamp: https://t.co/pTodTvnmqU 
+ #LearnToCode #JavaScript
+5: I just made it to 7 Kyū on @codewars! Come join me #codewarriors! https://t.co/BTKKopoltv
+6: I just whipped my script into shape with Angular.js on @codeschool! https://t.co/d6D7ZjGucZ
+7: Check out the project I just built with @FreeCodeCamp: https://t.co/K79kxo3FWA 
+ #LearnToCode #JavaScript
+8: Check out the project I just built with @FreeCodeCamp: https://t.co/zfSW64vn9L
+ #LearnToCode #JavaScript
+9: Check out the project I just built with @FreeCodeCamp: https://t.co/VzeW3ZK3Fa 
+ #LearnToCode #JavaScript
+10: Check out this JavaScript calculator I just built with @FreeCodeCamp: https://t.co/8av0uVeruq 
+ #LearnToCode #JavaScript
+11: Check out the project I just built with @FreeCodeCamp: https://t.co/QpmlH7sT6Y 
+ #LearnToCode #JavaScript
+12: Check out the project I just built with @FreeCodeCamp: https://t.co/9PDWALSbds 
+ #LearnToCode #JavaScript
+13: @nvidia Hook'em Horns Rig: GTX 780 painted orange and white http://t.co/ZZH0rVaIrn
+14: @CoinShift any news on why the sites down?
+15: Who's got 14974? #gtxmatch
+16: Check this site out! http://t.co/bmk59tG2jS
+17: You Should Really Read This Article http://t.co/zcvgwWMN8I =D
+18: @Pokketsays In case you missed it, tell all you friends! http://t.co/xl1xwC5Wio
+19: Ubisoft: Release Tom Clancy's The Division for PC. Go vote for this please! https://t.co/U9Y6n2Mflq via @change
+20: @Team_WildStar I massively see what you did there!
+=========================================================================================================
+OMDB search for movie: 'lord of the rings'
+Movie Title: Lord of the Rings
+Release Year: 1990
+IMDB Rating: 7.2
+Country: USA
+Language: English
+Plot: While Frodo and Sam, now accompanied by a new guide, continue their hopeless journey towards the land of shadow to destroy the One Ring, each member of the broken fellowship plays their ...
+Actors: Robin Atkin Downes
+=========================================================================================================
+Spotify Search for track: 'all you need is love'
+Artist name: The Beatles
+Song: All You Need Is Love - Remastered 2015
+Link: https://open.spotify.com/track/6KqiVlOLfDzJViJVAPym1p
+Album: 1 (Remastered)
+=========================================================================================================
+Ran new-command and added movie-this, 'the right stuff' to random.txt
+=========================================================================================================
+Ran do-what-it-says: movie-this 'the right stuff' command
+OMDB search for movie: 'the right stuff'
+Movie Title: The Right Stuff
+Release Year: 1983
+IMDB Rating: 7.9
+Country: USA
+Language: English, Russian
+Plot: The story of the original Mercury 7 astronauts and their macho, seat-of-the-pants approach to the space program.
+Actors: Sam Shepard, Scott Glenn, Ed Harris, Dennis Quaid
+=========================================================================================================
