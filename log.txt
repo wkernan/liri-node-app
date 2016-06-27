@@ -1,7 +1,14 @@
-My Last 20 Tweets
+8:47:21pm Ran do-what-it-says: spotify-this-song 'the ghost inside' command
+8:47:21pm Spotify Search for track: 'the ghost inside'
+Artist name: Broken Bells
+Song: The Ghost Inside
+Link: https://open.spotify.com/track/32fmQsWSAaDas2MJRyMSGG
+Album: Broken Bells
+=========================================================================================================
+8:48:44pm My Last 20 Tweets
+1: I just earned the First Component badge on level 1 of Powering Up With React! https://t.co/1U11bbs7IS
 2: Check out the project I just built with @FreeCodeCamp: https://t.co/Nx4lx4UV6m
  #LearnToCode #JavaScript
-1: I just earned the First Component badge on level 1 of Powering Up With React! https://t.co/1U11bbs7IS
 3: I just made it to 6 Kyū on @codewars! Come join me #codewarriors! https://t.co/BTKKopoltv
 4: Check out the project I just built with @FreeCodeCamp: https://t.co/pTodTvnmqU 
  #LearnToCode #JavaScript
@@ -28,30 +35,20 @@ My Last 20 Tweets
 19: Ubisoft: Release Tom Clancy's The Division for PC. Go vote for this please! https://t.co/U9Y6n2Mflq via @change
 20: @Team_WildStar I massively see what you did there!
 =========================================================================================================
-OMDB search for movie: 'lord of the rings'
-Movie Title: Lord of the Rings
-Release Year: 1990
-IMDB Rating: 7.2
-Country: USA
-Language: English
-Plot: While Frodo and Sam, now accompanied by a new guide, continue their hopeless journey towards the land of shadow to destroy the One Ring, each member of the broken fellowship plays their ...
-Actors: Robin Atkin Downes
+8:49:08pm OMDB search for movie: 'lords of dogtown'
+Movie Title: Lords of Dogtown
+Release Year: 2005
+IMDB Rating: 7.1
+Country: USA, Germany
+Language: English, Spanish
+Plot: The film follows the surf and skateboarding trends that originated in Venice, California during the 1970's.
+Actors: John Robinson, Emile Hirsch, Rebecca De Mornay, William Mapother
 =========================================================================================================
-Spotify Search for track: 'all you need is love'
-Artist name: The Beatles
-Song: All You Need Is Love - Remastered 2015
-Link: https://open.spotify.com/track/6KqiVlOLfDzJViJVAPym1p
-Album: 1 (Remastered)
+8:49:29pm Spotify Search for track: 'midnight city'
+Artist name: M83
+Song: Midnight City
+Link: https://open.spotify.com/track/1eyzqe2QqGZUmfcPZtrIyt
+Album: Hurry Up, We're Dreaming
 =========================================================================================================
-Ran new-command and added movie-this, 'the right stuff' to random.txt
-=========================================================================================================
-Ran do-what-it-says: movie-this 'the right stuff' command
-OMDB search for movie: 'the right stuff'
-Movie Title: The Right Stuff
-Release Year: 1983
-IMDB Rating: 7.9
-Country: USA
-Language: English, Russian
-Plot: The story of the original Mercury 7 astronauts and their macho, seat-of-the-pants approach to the space program.
-Actors: Sam Shepard, Scott Glenn, Ed Harris, Dennis Quaid
+8:49:52pm Ran new-command and added movie-this, 'the goonies' to random.txt
 =========================================================================================================
