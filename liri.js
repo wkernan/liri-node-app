@@ -134,24 +134,26 @@ function findMovie() {
 	if(argStr == '') {
 		console.log(getTime() + ' Please enter a movie for me to search for'.red);
 	} else {
-		request('http://www.omdbapi.com/?t=' + argStr + '&plot=short&r=json', function (error, response, body) {
+		request('http://www.omdbapi.com/?t=' + argStr + '&plot=short&tomatoes=true&r=json', function (error, response, body) {
 			var data = JSON.parse(body);
 		  if (data.Response == 'True') {
 		  	console.log(getTime() + " Searching OMDB database for '" + colors.green(argStr) + "'\n");
 		  	console.log('Movie Title: '.blue + data.Title);
 		  	console.log('Release Year: '.blue + data.Year);
-		  	console.log('IMDB Rating '.blue + data.imdbRating);
+		  	console.log('IMDB Rating: '.blue + data.imdbRating);
+		  	console.log('Rotten Tomatoes Rating: '.blue + data.tomatoMeter + '%');
+		  	console.log('Rotten Tomatoes Link: '.blue + data.tomatoURL);
 		  	console.log('Country: '.blue + data.Country);
 		  	console.log('Language: '.blue + data.Language);
 		  	console.log('Plot: '.blue + data.Plot);
 		  	console.log('Actors: '.blue + data.Actors);
 		  	//console.log('Rotten Tomatoes Rating: ' + )
-		  	fs.appendFile("log.txt", getTimeText() + "OMDB search for movie: '" + argStr + "'\n" + 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n=========================================================================================================\n', function (err) {
+		  	fs.appendFile("log.txt", getTimeText() + "OMDB search for movie: '" + argStr + "'\n" + 'Movie Title: ' + data.Title + '\n' + 'Release Year: ' + data.Year + '\n' + 'IMDB Rating: ' + data.imdbRating + '\n' + 'Rotten Tomatoes Rating: ' + data.tomatoMeter + '%\n' + 'Rotten Tomatoes Link: ' + data.tomatoURL + '\n' + 'Country: ' + data.Country + '\n' + 'Language: ' + data.Language + '\n' + 'Plot: ' + data.Plot + '\n' + 'Actors: ' + data.Actors + '\n=========================================================================================================\n', function (err) {
 					if(err) throw err;
 					console.log('Saved to log.txt'.bgGreen);
 				})
 		  } else {
-		  	request('http://www.omdbapi.com/?t=mr.nobody&plot=short&r=json', function (error, response, body) {
+		  	request('http://www.omdbapi.com/?t=mr.nobody&tomatoes=true&plot=short&r=json', function (error, response, body) {
 		  		if (!error && response.statusCode == 200) {
 		  			var data = JSON.parse(body);
 		  			console.log(getTime() + " I couldn't find the movie: '" + colors.green(argStr) + "' so here's the info for 'Mr. Nobody' \n");

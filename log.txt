@@ -52,3 +52,64 @@ Album: Hurry Up, We're Dreaming
 =========================================================================================================
 8:49:52pm Ran new-command and added movie-this, 'the goonies' to random.txt
 =========================================================================================================
+9:57:59am OMDB search for movie: 'dark city'
+Movie Title: Dark City
+Release Year: 1998
+IMDB Rating: 7.7
+Country: Australia, USA
+Language: English
+Plot: A man struggles with memories of his past, including a wife he cannot remember, in a nightmarish world with no sun.
+Actors: Rufus Sewell, William Hurt, Kiefer Sutherland, Jennifer Connelly
+=========================================================================================================
+9:58:46am OMDB search for movie: 'braveheart'
+Movie Title: Braveheart
+Release Year: 1995
+IMDB Rating: 8.4
+Country: USA
+Language: English, French, Latin, Scottish Gaelic
+Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+=========================================================================================================
+10:00:23am OMDB search for movie: 'braveheart'
+Movie Title: Braveheart
+Release Year: 1995
+IMDB Rating: 8.4
+Country: USA
+Language: English, French, Latin, Scottish Gaelic
+Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+=========================================================================================================
+10:00:52am Spotify Search for track: 'heyho'
+Artist name: Four Peanuts Deluxe
+Song: By My Side - Four Peanuts Deluxe HeyHo Remix
+Link: https://open.spotify.com/track/0UIPvwfG7QJZgN1HY1nvJZ
+Album: This Is the New School
+=========================================================================================================
+10:01:03am Spotify Search for track: 'hey ho'
+Artist name: The Lumineers
+Song: Ho Hey
+Link: https://open.spotify.com/track/0W4Kpfp1w2xkY3PrV714B7
+Album: The Lumineers
+=========================================================================================================
+10:03:40am OMDB search for movie: 'braveheart'
+Movie Title: Braveheart
+Release Year: 1995
+IMDB Rating: 8.4
+Rotten Tomatoes Rating: 78
+Rotten Tomatoes Link: http://www.rottentomatoes.com/m/1065684-braveheart/
+Country: USA
+Language: English, French, Latin, Scottish Gaelic
+Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+=========================================================================================================
+10:04:12am OMDB search for movie: 'braveheart'
+Movie Title: Braveheart
+Release Year: 1995
+IMDB Rating: 8.4
+Rotten Tomatoes Rating: 78%
+Rotten Tomatoes Link: http://www.rottentomatoes.com/m/1065684-braveheart/
+Country: USA
+Language: English, French, Latin, Scottish Gaelic
+Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+=========================================================================================================
