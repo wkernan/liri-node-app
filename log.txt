@@ -1,10 +1,3 @@
-8:47:21pm Ran do-what-it-says: spotify-this-song 'the ghost inside' command
-8:47:21pm Spotify Search for track: 'the ghost inside'
-Artist name: Broken Bells
-Song: The Ghost Inside
-Link: https://open.spotify.com/track/32fmQsWSAaDas2MJRyMSGG
-Album: Broken Bells
-=========================================================================================================
 8:48:44pm My Last 20 Tweets
 1: I just earned the First Component badge on level 1 of Powering Up With React! https://t.co/1U11bbs7IS
 2: Check out the project I just built with @FreeCodeCamp: https://t.co/Nx4lx4UV6m
@@ -103,6 +96,17 @@ Plot: When his secret bride is executed for assaulting an English soldier who tr
 Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
 =========================================================================================================
 10:04:12am OMDB search for movie: 'braveheart'
+Movie Title: Braveheart
+Release Year: 1995
+IMDB Rating: 8.4
+Rotten Tomatoes Rating: 78%
+Rotten Tomatoes Link: http://www.rottentomatoes.com/m/1065684-braveheart/
+Country: USA
+Language: English, French, Latin, Scottish Gaelic
+Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+=========================================================================================================
+6:09:13pm OMDB search for movie: 'braveheart'
 Movie Title: Braveheart
 Release Year: 1995
 IMDB Rating: 8.4
