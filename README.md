@@ -12,4 +12,6 @@ Run any of the following commands:
 
 * `node liri.js do-what-it-says` to run the command inside the random.txt file
 
-* `node liri.js new-command` along with any of the options `my-tweets`, `spotify-this-song`, `movie-this` plus a search parameter if needed
+* `node liri.js new-command` along with any of the options `my-tweets`, `spotify-this-song`, `movie-this` plus a search parameter if needed to set a new command inside the random.txt file.
+
+The log.txt file will also save each command you use along with timestamp for you to refer back to later.
